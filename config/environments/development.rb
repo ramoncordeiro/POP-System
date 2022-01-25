@@ -54,6 +54,11 @@ Rails.application.configure do
   config.active_record.verbose_query_logs = true
 
 
+  ##config.read_encrypted_secrets = true #to read credentials
+
+  pg_user = Rails.application.secrets.postgresql_username
+  pg_pass = Rails.application.secrets.postgresql_password
+
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
 
