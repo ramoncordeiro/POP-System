@@ -59,6 +59,9 @@ Rails.application.configure do
   pg_user = Rails.application.secrets.postgresql_username
   pg_pass = Rails.application.secrets.postgresql_password
 
+  #config.factory_bot.definition_file_paths = ["custom/factories"]
+  #config.factory_bot.definition_file_paths = ["spec/factories"]
+
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
 
